@@ -1,6 +1,6 @@
 # 원티드 프리온보딩 프론트엔드 선발 과제
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+이 레파지토리는 원티드 프리온보딩 프론트엔드 과정 선발 과제를 위해 만들어졌습니다.
 
 ## 성명
 
@@ -8,8 +8,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## 프로젝트 실행 방법
 
-#### `npm install`
+`npm install` 명령어로 설치 후
 
-#### `npm start`
+`npm start` 명령어로 실행
 
 ## 데모 영상
