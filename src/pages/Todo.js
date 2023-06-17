@@ -6,7 +6,7 @@ import { createTodo, deleteTodo, getTodos, updateTodo } from "../api/api";
 import { styled } from "styled-components";
 
 export default function Todo() {
-  const [todos, setTodos] = useState(() => readTodo());
+  const [todos, setTodos] = useState(() => getTodo());
   const [accessToken, setAccessToken] = useState(
     localStorage.getItem("token") || ""
   );
@@ -81,7 +81,7 @@ export default function Todo() {
   );
 }
 
-function readTodo() {
+function getTodo() {
   const todos = localStorage.getItem("todos");
   getTodos(localStorage.getItem("access_token"), todos);
   return todos ? JSON.parse(todos) : [];
@@ -89,4 +89,6 @@ function readTodo() {
 
 const TodoWrapper = styled.div`
   text-align: center;
+  font-family: "Orbit", sans-serif;
+  font-family: "Orbitron", sans-serif;
 `;

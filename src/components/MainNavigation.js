@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink, redirect, useNavigate } from "react-router-dom";
 import { styled } from "styled-components";
 
 export default function MainNavigation() {
@@ -11,7 +11,8 @@ export default function MainNavigation() {
 
   const handleLogout = () => {
     localStorage.removeItem("token");
-    return navigation("/");
+    redirect("/");
+    return;
   };
 
   return (
@@ -36,8 +37,8 @@ export default function MainNavigation() {
             <NavLink to="/todo">TODO LIST</NavLink>
           </div>
           {accessToken && (
-            <div>
-              <button onClick={handleLogout}>Logout</button>
+            <div onClick={handleLogout} className="logout">
+              Logout
             </div>
           )}
         </ul>
@@ -60,26 +61,23 @@ const NavWrapper = styled.div`
 
   .list a {
     text-decoration: none;
-    color: #1e5085;
+    color: white;
   }
 
   .list a:hover,
   .list a.active {
-    color: #1e5085;
+    color: white;
     font-weight: bold;
   }
-
-  .list button {
-    color: white;
-    background-color: #1e5085;
-    padding: 0.5rem 1.5rem;
-    border-radius: 4px;
-    border: none;
+  .logout {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
   }
-
-  button:hover,
-  button:active,
-  button.active {
-    background-color: #2669b0;
+  .logout.active {
+    color: #f68084;
+    background-color: white;
+    cursor: pointer;
   }
 `;

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { styled } from "styled-components";
 
 export default function TodoList({ todo, onEdit, onCheck, onDelete }) {
   const { text, state } = todo;
@@ -11,7 +12,12 @@ export default function TodoList({ todo, onEdit, onCheck, onDelete }) {
     onCheck({ ...todo, state });
   };
 
-  const handleDelete = () => onDelete(todo);
+  //delete
+  const handleDelete = () => {
+    onDelete(todo);
+  };
+
+  //edit
   const handleEditCheck = () => {
     setIsEditing(true);
     setEditValue(text);
@@ -31,7 +37,7 @@ export default function TodoList({ todo, onEdit, onCheck, onDelete }) {
   };
 
   return (
-    <div>
+    <TodoListWrapper>
       <input
         type="checkbox"
         id={`checkbox-${text}`}
@@ -56,7 +62,11 @@ export default function TodoList({ todo, onEdit, onCheck, onDelete }) {
       )}
       {!isEditing && (
         <>
-          <label htmlFor={`checkbox-${text}`} completed={state === "completed"}>
+          <label
+            htmlFor={`checkbox-${text}`}
+            completed={state === "completed"}
+            className={state === "completed" ? "completed" : ""}
+          >
             {text}
           </label>
           <button data-testid="modify-button" onClick={handleEditCheck}>
@@ -67,6 +77,31 @@ export default function TodoList({ todo, onEdit, onCheck, onDelete }) {
           </button>
         </>
       )}
-    </div>
+    </TodoListWrapper>
   );
 }
+
+const TodoListWrapper = styled.div`
+  margin: 20px;
+  label.completed {
+    color: grey;
+    text-decoration: line-through;
+  }
+  button {
+    margin-left: 10px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 0.5rem 0.5rem;
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+  }
+
+  button:hover,
+  button:active,
+  button.active {
+    color: #f68084;
+    background-color: white;
+    cursor: pointer;
+  }
+`;

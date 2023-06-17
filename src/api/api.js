@@ -27,7 +27,7 @@ export const createTodo = async (accessToken, todo) => {
 
 export const getTodos = async (accessToken, todos) => {
   try {
-    const res = await axios.get("/todos", {
+    const res = await api.get("/todos", {
       headers: {
         Authorization: `Bearer ${accessToken}`,
       },
@@ -40,7 +40,7 @@ export const getTodos = async (accessToken, todos) => {
 
 export const updateTodo = async (accessToken, checked) => {
   try {
-    const res = await axios.put(
+    const res = await api.put(
       `/todos/${checked.id}`,
       {
         todo: JSON.stringify(checked.text),
@@ -61,7 +61,7 @@ export const updateTodo = async (accessToken, checked) => {
 
 export const deleteTodo = async (accessToken, deleted) => {
   try {
-    const res = await axios.delete(`/todos/${deleted.id}`, {
+    const res = await api.delete(`/todos/${deleted.id}`, {
       headers: {
         Authorization: `Bearer ${accessToken}`,
         "Content-Type": "application/json",

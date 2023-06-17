@@ -89,21 +89,26 @@ const SigninWrapper = styled.div`
   text-align: center;
   input {
     margin-left: 10px;
-    font-size: 20px;
-    border: none;
-    border-radius: 10px;
+      border: none;
+      border-radius: 20px;
+      font-size: 20px;
+    }
   }
   button {
+    margin-left: 10px;
     color: white;
-    background-color: #1e5085;
-    padding: 0.5rem 1.5rem;
-    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 0.5rem 0.5rem;
+    border-radius: 20px;
     border: none;
+    font-weight: bold;
   }
 
   button:hover,
   button:active,
   button.active {
-    background-color: #2669b0;
+    color: #f68084;
+    background-color: white;
+    cursor: pointer;
   }
 `;

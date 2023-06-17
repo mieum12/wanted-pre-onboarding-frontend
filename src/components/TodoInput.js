@@ -36,20 +36,23 @@ const InputWrapper = styled.div`
   input {
     margin-right: 10px;
     border: none;
-    border-radius: 4px;
+    border-radius: 20px;
     font-size: 20px;
   }
   button {
     color: white;
-    background-color: #1e5085;
+    background-color: rgba(255, 255, 255, 0.5);
     padding: 0.5rem 0.5rem;
-    border-radius: 4px;
+    border-radius: 20px;
     border: none;
+    font-weight: bold;
   }
 
   button:hover,
   button:active,
   button.active {
-    background-color: #2669b0;
+    color: #f68084;
+    background-color: white;
+    cursor: pointer;
   }
 `;

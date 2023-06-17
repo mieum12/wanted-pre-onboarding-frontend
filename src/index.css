@@ -1,8 +1,10 @@
 body {
-  /* color: #1e5085; */
-  background-color: #bed4eb;
+  color: white;
+  /* background-image: url(/public/background.png); */
+  background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+  height: 100vh;
   margin: 0;
-  font-family: "Orbitron", sans-serif;
+  font-family: "Orbitron", "Orbit", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
