@@ -36,7 +36,7 @@
 
 ### (1) Sign in/ Sign up
 
-<img src="https://github.com/mieum12/wanted-pre-onboarding-frontend/assets/119471104/7faf2be1-ad7c-4cfd-9f49-77f29bd3359f">
+<img src="https://github.com/mieum12/wanted-pre-onboarding-frontend/assets/119471104/006dc378-3afb-480d-a1e0-b90ba04a1a22">
 
 ✅ Assignment 1
 
@@ -63,7 +63,7 @@
 
 ### (2) Todo
 
-<img src="https://github.com/mieum12/wanted-pre-onboarding-frontend/assets/119471104/0c825723-f136-438a-8f62-60c5f11b8f28">
+<img src="https://github.com/mieum12/wanted-pre-onboarding-frontend/assets/119471104/ade54022-db86-4916-8679-9e56e1325fd7">
 
 ✅ Assignment 5
 
