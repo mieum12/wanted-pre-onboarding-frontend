@@ -63,6 +63,8 @@
 
 ### Todo
 
+<img src="https://github.com/mieum12/wanted-pre-onboarding-frontend/assets/119471104/0c825723-f136-438a-8f62-60c5f11b8f28">
+
 ✅ Assignment 5
 
 - /todo경로에 접속하면 투두 리스트의 목록 확인
