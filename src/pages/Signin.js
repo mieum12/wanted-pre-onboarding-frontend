@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Form, useNavigate } from "react-router-dom";
 import { api } from "../api/api";
 import { styled } from "styled-components";
@@ -7,6 +7,10 @@ export default function Signin() {
   const [input, setInput] = useState({ email: "", password: "" });
   const [validEmail, setValidEmail] = useState(false);
   const navigation = useNavigate();
+  const [accessToken, setAccessToken] = useState(
+    localStorage.getItem("token") || ""
+  );
+  const navigate = useNavigate();
 
   const handleInput = (e) => {
     const { name, value } = e.target;
@@ -45,6 +49,14 @@ export default function Signin() {
       console.error(error);
     }
   };
+
+  //로그인 됐을때는 todo로 이동시켜주기
+  useEffect(() => {
+    if (accessToken) {
+      window.location.href = "/todo";
+      return;
+    }
+  }, [accessToken, navigate]);
 
   return (
     <SigninWrapper>

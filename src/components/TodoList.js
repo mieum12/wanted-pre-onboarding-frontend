@@ -38,14 +38,14 @@ export default function TodoList({ todo, onEdit, onCheck, onDelete }) {
 
   return (
     <TodoListWrapper>
-      <input
-        type="checkbox"
-        id={`checkbox-${text}`}
-        onChange={handleChange}
-        checked={state === "completed"}
-      />
       {isEditing && (
-        <>
+        <li>
+          <input
+            type="checkbox"
+            id={`checkbox-${text}`}
+            onChange={handleChange}
+            checked={state === "completed"}
+          />
           <input
             data-testid="modify-input"
             type="text"
@@ -58,16 +58,23 @@ export default function TodoList({ todo, onEdit, onCheck, onDelete }) {
           <button data-testid="cancel-button" onClick={handleCancel}>
             취소
           </button>
-        </>
+        </li>
       )}
+
       {!isEditing && (
-        <>
+        <li>
+          <input
+            type="checkbox"
+            id={`checkbox-${text}`}
+            onChange={handleChange}
+            checked={state === "completed"}
+          />
           <label
             htmlFor={`checkbox-${text}`}
             completed={state === "completed"}
             className={state === "completed" ? "completed" : ""}
           >
-            {text}
+            <span>{text}</span>
           </label>
           <button data-testid="modify-button" onClick={handleEditCheck}>
             수정
@@ -75,7 +82,7 @@ export default function TodoList({ todo, onEdit, onCheck, onDelete }) {
           <button data-testid="delete-button" onClick={handleDelete}>
             삭제
           </button>
-        </>
+        </li>
       )}
     </TodoListWrapper>
   );

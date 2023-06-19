@@ -49,13 +49,6 @@ export default function Todo() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const handleError = (e) => {
-      e.preventDefault();
-      e.stopPropagation();
-    };
-
-    window.onerror = handleError;
-
     if (!accessToken) {
       window.location.href = "/signin";
       return;
