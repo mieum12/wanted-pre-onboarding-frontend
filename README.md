@@ -12,9 +12,31 @@
 
 `npm start` 명령어로 실행
 
+## 2. 프로젝트 구조
+
+```bash
+
+📦 src
+├── 📂 api
+│   ├── 📂 api
+│   └── 📄 todoApi
+├── 📂 component
+│   ├── 📂 MainNavigation
+│   ├── 📂 TodoInput
+│   └── 📄 TodoList
+└── 📂 pages
+    ├── 📄 Home
+    ├── 📄 Signin
+    ├── 📄 Signup
+    └── 📄 Todo
+
+```
+
 ## 데모 영상 (기능 시현)
 
 ### Sign in/ Sign up
+
+<img src="![GIFMaker_me](https://github.com/mieum12/wanted-pre-onboarding-frontend/assets/119471104/7faf2be1-ad7c-4cfd-9f49-77f29bd3359f)">
 
 ✅ Assignment 1
 
