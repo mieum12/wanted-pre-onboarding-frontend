@@ -18,11 +18,11 @@
 
 📦 src
 ├── 📂 api
-│   ├── 📂 api
+│   ├── 📄 api
 │   └── 📄 todoApi
 ├── 📂 component
-│   ├── 📂 MainNavigation
-│   ├── 📂 TodoInput
+│   ├── 📄 MainNavigation
+│   ├── 📄 TodoInput
 │   └── 📄 TodoList
 └── 📂 pages
     ├── 📄 Home
