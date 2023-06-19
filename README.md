@@ -69,7 +69,7 @@
 
 - /todo경로에 접속하면 투두 리스트의 목록 확인
 - 투두 리스트의 내용과 완료 여부 표시(input의 checkbox)
-- <li> tag로 감싸기
+- `<li>` tag로 감싸기
 
 ✅ Assignment 6, 7, 8, 9
 
