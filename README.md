@@ -36,7 +36,7 @@
 
 ### Sign in/ Sign up
 
-<img src="![GIFMaker_me](https://github.com/mieum12/wanted-pre-onboarding-frontend/assets/119471104/7faf2be1-ad7c-4cfd-9f49-77f29bd3359f)">
+<img src="https://github.com/mieum12/wanted-pre-onboarding-frontend/assets/119471104/7faf2be1-ad7c-4cfd-9f49-77f29bd3359f">
 
 ✅ Assignment 1
 
