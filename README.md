@@ -1,18 +1,18 @@
-# 원티드 프리온보딩 프론트엔드 선발 과제
+# [원티드 프리온보딩 프론트엔드 선발 과제]
 
 이 레파지토리는 원티드 프리온보딩 프론트엔드 과정 선발 과제를 위해 만들어졌습니다.
 
-## 성명
+## 1. 성명
 
 최지원
 
-## 프로젝트 실행 방법
+## 2. 프로젝트 실행 방법
 
 `npm install` 명령어로 설치 후
 
 `npm start` 명령어로 실행
 
-## 2. 프로젝트 구조
+## 3. 프로젝트 구조
 
 ```bash
 
@@ -32,9 +32,9 @@
 
 ```
 
-## 데모 영상 (기능 시현)
+## 4. 데모 영상 (기능 시현)
 
-### Sign in/ Sign up
+### (1) Sign in/ Sign up
 
 <img src="https://github.com/mieum12/wanted-pre-onboarding-frontend/assets/119471104/7faf2be1-ad7c-4cfd-9f49-77f29bd3359f">
 
@@ -61,7 +61,7 @@
 
 - 로그아웃 (로컬 스토리지에서 삭제)
 
-### Todo
+### (2) Todo
 
 <img src="https://github.com/mieum12/wanted-pre-onboarding-frontend/assets/119471104/0c825723-f136-438a-8f62-60c5f11b8f28">
 
